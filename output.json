@@ -1,22 +1,23 @@
 {
 	"select": {
 		"columns": [
-			{ "column": "name",
-			  "type": "[]"
+			{ "column": "idProduct",
+			  "type": "['COUNT']"
 			},
-			{ "column": "age",
+			{ "column": "idCategory",
 			  "type": "[]"
 			}
 		]
 	},
 	"from": {
-		"table": "student"
+		"table": "sales"
 	},
 	"join": {
 	},
 	"where": {
 	},
 	"group_by": {
+		"column": "idCategory"
 	},
 	"select": {
 	},

@@ -127,7 +127,7 @@ Parameters:
 ```
 example of usage:
 ```
-python3 -m ln2sql.main -d database_store/school.sql -l lang_store/english.csv -j output.json -i "Average age of students?"
+python3 -m ln2sql.main -d database_store/school.sql -l lang_store/english.csv -j output.json -i "Average age of STUDENTS?"
 ```
 
 or by graphical interface by typing the following command:

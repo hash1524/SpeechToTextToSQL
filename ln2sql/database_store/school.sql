@@ -32,17 +32,17 @@ INSERT INTO `class` (`idClass`, `classroom`) VALUES
 
 -- --------------------------------------------------------
 
-CREATE TABLE IF NOT EXISTS `students` (
-  `idStudent` int(11) NOT NULL AUTO_INCREMENT,
-  `idClass` int(11) NOT NULL,
-  `name` varchar(20) COLLATE utf8_unicode_ci NOT NULL,
+CREATE TABLE IF NOT EXISTS `sales` (
+  `idProduct` int(11) NOT NULL AUTO_INCREMENT,
+  `idCategory` int(11) NOT NULL,
+  `item` varchar(20) COLLATE utf8_unicode_ci NOT NULL,
   `firstname` varchar(20) COLLATE utf8_unicode_ci NOT NULL,
-  `age` int(11) NOT NULL,
-  PRIMARY KEY (`idStudent`)
+  `cost` int(11) NOT NULL,
+  PRIMARY KEY (`idProduct`)
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=7 ;
 
 
-INSERT INTO `students` (`idStudent`, `idClass`, `name`, `firstname`, `age`) VALUES
+INSERT INTO `sales` (`idProduct`, `idCategory`, `item`, `firstname`, `cost`) VALUES
 (1, 1, 'DI', 'Alain', 23),
 (2, 1, 'EMMAR', 'Jean', 21),
 (3, 2, 'TENRIEN', 'Jean', 20),
