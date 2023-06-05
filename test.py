@@ -30,7 +30,6 @@ for key in dict_keys:
     list_keys.append(key)
 for i in list_keys:
     i=i.replace(".","")
-#print(list_keys)
 
 JSON_bar_chart="""{
   "$schema": "https://vega.github.io/schema/vega/v5.json",
